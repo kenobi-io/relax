@@ -1,0 +1,27 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": false,
+        "incremental": true,
+        "importHelpers": true,
+        "lib": ["es2017", "dom"],
+        "module": "esnext",
+        "moduleResolution": "nodenext",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "strictBindCallApply": true,
+        "strict": true,
+        "target": "es2020",
+        "types": ["jest", "node"]
+    },
+    "exclude": ["node_modules", "tmp", "packages/**/*.spec.ts", "dist"],
+    "include": ["packages/**/*.ts"]
+}

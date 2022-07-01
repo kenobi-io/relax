@@ -1,18 +1,57 @@
 {
-  "name": "relax",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "nx": "14.3.6",
-    "@nrwl/cli": "14.3.6",
-    "@nrwl/workspace": "14.3.6",
-    "typescript": "~4.7.2",
-    "prettier": "^2.6.2"
-  },
-  "workspaces": [
-    "packages/**"
-  ]
+    "name": "relax",
+    "version": "1.0.0",
+    "description": "RELATING EXTENSIONS LIBRARY FOR JAVASCRIPT - RELAX JS",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kenobi-io/relax.git"
+    },
+    "author": "kenobi-io",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kenobi-io/relax/issues"
+    },
+    "homepage": "https://github.com/kenobi-io/relax#readme",
+    "keywords": [
+        "relax",
+        "library relax"
+    ],
+    "scripts": {
+        "build": "rm -rf dist && tsc",
+        "format": "prettier 'packages/**/*.ts' --write -c",
+        "lint": "eslint 'packages/**/*.ts' --quiet --fix --cache --cache-location '.cache/.eslintcache'",
+        "version:patch": "npm version patch",
+        "version:minor": "npm version minor",
+        "version:major": "npm version major",
+        "publish": "npm publish",
+        "prepare": "husky install",
+        "test": "jest --cache"
+    },
+    "devDependencies": {
+        "@types/jest": "28.1.4",
+        "@types/node": "^18.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.30.0",
+        "@typescript-eslint/parser": "^5.30.0",
+        "eslint": "^8.18.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsdoc": "^39.3.3",
+        "eslint-plugin-prefer-arrow": "^1.2.3",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "eslint-plugin-sort": "^2.4.0",
+        "eslint-plugin-sort-class-members": "^1.14.1",
+        "husky": "^8.0.1",
+        "jest": "28.1.2",
+        "prettier": "^2.7.1",
+        "ts-jest": "28.0.5",
+        "ts-loader": "^9.3.1",
+        "ts-node": "^10.8.1",
+        "tsconfig-paths": "4.0.0",
+        "tslib": "^2.4.0",
+        "typescript": "~4.7.4"
+    },
+    "workspaces": [
+        "packages/**"
+    ]
 }
