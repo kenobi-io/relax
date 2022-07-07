@@ -19,8 +19,7 @@
         "strictNullChecks": true,
         "strictBindCallApply": true,
         "strict": true,
-        "target": "es2020",
-        "types": ["jest", "node"]
+        "target": "es2020"
     },
     "exclude": ["node_modules", "tmp", "packages/**/*.spec.ts", "dist"],
     "include": ["packages/**/*.ts"]
