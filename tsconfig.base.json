@@ -21,6 +21,5 @@
         "strict": true,
         "target": "es2020"
     },
-    "exclude": ["node_modules", "tmp", "packages/**/*.spec.ts", "dist"],
-    "include": ["packages/**/*.ts"]
+    "exclude": ["node_modules", "tmp", "packages/**/*.spec.ts", "dist"]
 }
